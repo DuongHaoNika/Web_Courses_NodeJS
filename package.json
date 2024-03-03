@@ -1,0 +1,51 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass -w src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DuongHaoNika/nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "nodejs",
+    "blog",
+    "blog",
+    "DuongHaoNika",
+    "Hao"
+  ],
+  "author": "Duong Quang Hao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuongHaoNika/nodejs/issues"
+  },
+  "homepage": "https://github.com/DuongHaoNika/nodejs#readme",
+  "lint-staged": {
+    "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
+  }
+}
